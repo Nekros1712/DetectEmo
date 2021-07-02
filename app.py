@@ -9,8 +9,8 @@ import numpy as np
 import joblib
 
 # Load the Model
-pipeline_lr = joblib.load(open("../Model/LogisticRegression.pkl", "rb"))
-pipeline_svc = joblib.load(open("../Model/SupportVectorClassifier.pkl", "rb"))
+pipeline_lr = joblib.load(open("Model/LogisticRegression.pkl", "rb"))
+pipeline_svc = joblib.load(open("Model/SupportVectorClassifier.pkl", "rb"))
 
 # Functions
 def predict_emotions(pipeline, text):
