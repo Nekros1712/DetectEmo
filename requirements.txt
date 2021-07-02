@@ -1,0 +1,11 @@
+streamlit
+altair
+plotly
+pandas
+numpy
+joblib
+neattext
+matplotlib
+seaborn
+sklearn
+xgboost
