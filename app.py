@@ -62,8 +62,8 @@ if choice is "Home":
                 height = 40
             )
             st.success("Prediction")
-            st.write(prediction_svc)
-            st.write("Confidence: ", round(np.max(probability_svc), 4))
+            st.write(upper(prediction_svc))
+            st.write("Confidence: ", round(np.max(probability_svc), 6))
             st.success("Prediction Probability")
             prob_df = pd.DataFrame(probability_svc, columns = pipeline_svc.classes_)
             prob_df_clean = prob_df.T.reset_index()
